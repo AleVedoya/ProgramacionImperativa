@@ -2,24 +2,24 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 //  Calculadora - Nivel I
 
-let num1 = prompt("Ingrese un  número: ");
-let num2 = prompt("Ingrese otro número: ");
+let num1 = Number(prompt("Ingrese un  número: "));
+let num2 = Number(prompt("Ingrese otro número: "));
 
-function sumar(num1, num2) {
-    return Number(num1) + Number(num2);
+function sumar(a, b) {
+    return a + b;
 }
 
-function restar(num1, num2) {
-    return num1 - num2;
+function restar(a, b) {
+    return a - b;
 }
 
-function multiplicar(num1, num2) {
-    return num1 * num2;
+function multiplicar(a, b) {
+    return a * b;
 }
 
-function dividir(num1, num2) {
-    while (num2 != 0) {
-        return num1 / num2;
+function dividir(a, b) {
+    while (b != 0) {
+        return a / b;
     }
     console.log("No se puede dividir por cero");
 }
@@ -51,8 +51,8 @@ console.log('--------------CUADRADO DE UN NUMERO--------------');
 
 let num3 = prompt("Ingrese otro número: ");
 
-function cuadradoDeUnNumero(num3) {
-    return multiplicar(num3, num3);
+function cuadradoDeUnNumero(a) {
+    return multiplicar(a, a);
 }
 
 console.log(cuadradoDeUnNumero(num3));
@@ -60,6 +60,7 @@ console.log(cuadradoDeUnNumero(num3));
 console.log('--------------PROMEDIO DE TRES NUMEROS--------------');
 
 function promedioDeTresNumeros(num1, num2, num3) {
+    let sumaAux = sumar
     return (sumar(Number(num1), Number(num2)) + Number(num3)) / 3;
 }
 
