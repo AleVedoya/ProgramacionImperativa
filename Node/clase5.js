@@ -7,13 +7,11 @@ console.log(`¡Hola ${nombre}!`);
 Recibe por parámetro pulgadas y retorna su equivalente en centímetros.
 */
 
-/* let convertirPulgadasACentimetros = function(valor){  //EXPRESADA
-    return valor * 2.54
-}
-*/
+// let convertirPulgadasACentimetros = function (valor) {  //EXPRESADA
+//   return valor * 2.54;
+// };
 
-function convertirPulgadaACentimetro(valor) {
-  //DECLARADA
+function convertirPulgadaACentimetro(valor) {  //DECLARADA
   return valor * 2.54;
 }
 
@@ -23,14 +21,11 @@ console.log(convertirPulgadaACentimetro(5));
 Ej: “pepito” es devuelto como “http://www.pepito.com”
 */
 
-/* let convertirString = function(palabra){  //EXPRESADA
-    return `http://www.${palabra}.com`
+// let convertirString = function (palabra) {  //EXPRESADA
+//   return `http://www.${palabra}.com`;
+// };
 
-}
-*/
-
-function convertirString(palabra) {
-  //DECLARADA
+function convertirString(palabra) {  //DECLARADA
   return `http://www.${palabra}.com`;
 }
 
@@ -40,14 +35,11 @@ console.log(convertirString(nombre));
 admiración.
 */
 
-/* let convertirString = function(palabra){  //EXPRESADA
-        return `${palabra}!`
+// let convertirString = function (palabra) {  //EXPRESADA
+//   return `${palabra}!`;
+// };
 
-}
-*/
-
-function convertirString(palabra) {
-  //DECLARADA
+function convertirString(palabra) {  //DECLARADA
   return `${palabra}!`;
 }
 
@@ -57,10 +49,8 @@ console.log(convertirString(nombre));
 para nosotros son 7 de ellos.
 */
 
-/* 
-let edad = prompt("Ingrese la edad de su perro: ");
-let convertirEdadPerro = (edad) => edad * 7;      //ARROW
-*/
+// let edad = prompt("Ingrese la edad de su perro: ");
+// let convertirEdadPerro = (edad) => edad * 7; //ARROW
 
 let edad = prompt("Ingrese la edad de su perro: ");
 
@@ -75,11 +65,14 @@ sueldo mensual como parámetro.
 PD: considerá que tu mes de trabajo tiene 40 horas.
 */
 
-/*
-let salarioMensual = prompt("Ingrese su salario mensual: ");
-let calcularValorHora = (salarioMensual) => salarioMensual / 160;    //ARROW
+let valorDeTuHora = (sueldoMensual) => {
+  let horaTrabajo = sueldoMensual / 40;
+  console.log(`Tu hora de trabajo vale ${horaTrabajo} pesos.`);
+};
+valorDeTuHora(200000);
 
-*/
+// let salarioMensual = prompt("Ingrese su salario mensual: ");
+// let calcularValorHora = (salarioMensual) => salarioMensual / 160; //ARROW
 
 let salarioMensual = prompt("Ingrese su salario mensual: ");
 
